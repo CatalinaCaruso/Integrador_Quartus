@@ -1,0 +1,19 @@
+
+*.o
+*.depend
+*.layout
+*.exe
+*.qws
+*.zip
+
+
+# Archivos generados por Quartus 
+
+*.rpt
+*.qws
+
+# Carpeta de base de datos
+db/
+incremental_db/
+output_files/
+simulation/
