@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect 64 120 232 136)
+	(rect 56 112 224 128)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "S0" (rect 5 0 18 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 64 184 232 200)
+	(rect 56 176 224 192)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "S1" (rect 5 0 18 12)(font "Arial" ))
 	(pt 168 8)
@@ -100,7 +100,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 280 112 328 144)
+	(rect 272 104 320 136)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 21 20 33)(font "Arial" ))
 	(port
@@ -125,7 +125,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 280 176 328 208)
+	(rect 272 168 320 200)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst1" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -200,7 +200,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 432 136 496 184)
+	(rect 424 128 488 176)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst4" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -232,7 +232,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 432 248 496 296)
+	(rect 432 256 496 304)
 	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
 	(text "inst5" (rect 3 37 26 49)(font "Arial" ))
 	(port
@@ -296,40 +296,8 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 232 192)
-	(pt 280 192)
-)
-(connector
 	(pt 232 248)
 	(pt 280 248)
-)
-(connector
-	(pt 328 192)
-	(pt 384 192)
-)
-(connector
-	(pt 384 192)
-	(pt 384 168)
-)
-(connector
-	(pt 384 168)
-	(pt 432 168)
-)
-(connector
-	(pt 384 152)
-	(pt 432 152)
-)
-(connector
-	(pt 384 152)
-	(pt 384 128)
-)
-(connector
-	(pt 384 128)
-	(pt 328 128)
-)
-(connector
-	(pt 232 128)
-	(pt 280 128)
 )
 (connector
 	(pt 232 312)
@@ -340,44 +308,12 @@ applicable agreement for further details.
 	(pt 384 248)
 )
 (connector
-	(pt 384 248)
-	(pt 384 264)
-)
-(connector
-	(pt 384 264)
-	(pt 432 264)
-)
-(connector
 	(pt 328 312)
 	(pt 384 312)
 )
 (connector
-	(pt 384 312)
-	(pt 384 280)
-)
-(connector
-	(pt 432 280)
-	(pt 384 280)
-)
-(connector
-	(pt 496 160)
-	(pt 560 160)
-)
-(connector
-	(pt 560 160)
-	(pt 560 208)
-)
-(connector
 	(pt 560 208)
 	(pt 624 208)
-)
-(connector
-	(pt 496 272)
-	(pt 560 272)
-)
-(connector
-	(pt 560 272)
-	(pt 560 224)
 )
 (connector
 	(pt 560 224)
@@ -386,4 +322,68 @@ applicable agreement for further details.
 (connector
 	(pt 688 216)
 	(pt 744 216)
+)
+(connector
+	(pt 384 248)
+	(pt 384 272)
+)
+(connector
+	(pt 384 272)
+	(pt 432 272)
+)
+(connector
+	(pt 384 312)
+	(pt 384 288)
+)
+(connector
+	(pt 384 288)
+	(pt 432 288)
+)
+(connector
+	(pt 560 280)
+	(pt 496 280)
+)
+(connector
+	(pt 560 224)
+	(pt 560 280)
+)
+(connector
+	(pt 224 184)
+	(pt 272 184)
+)
+(connector
+	(pt 320 184)
+	(pt 376 184)
+)
+(connector
+	(pt 376 184)
+	(pt 376 160)
+)
+(connector
+	(pt 376 160)
+	(pt 424 160)
+)
+(connector
+	(pt 376 144)
+	(pt 424 144)
+)
+(connector
+	(pt 376 144)
+	(pt 376 120)
+)
+(connector
+	(pt 376 120)
+	(pt 320 120)
+)
+(connector
+	(pt 224 120)
+	(pt 272 120)
+)
+(connector
+	(pt 560 152)
+	(pt 488 152)
+)
+(connector
+	(pt 560 208)
+	(pt 560 152)
 )
