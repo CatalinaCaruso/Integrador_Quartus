@@ -21,9 +21,9 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -160 368 8 384)
+	(rect -72 312 96 328)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 27 12)(font "Arial" ))
+	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -34,6 +34,54 @@ applicable agreement for further details.
 		(line (pt 109 12)(pt 113 8))
 	)
 	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -72 368 96 384)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "LOAD" (rect 5 0 35 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -72 176 96 192)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "DATA[3..0]" (rect 5 0 60 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 728 432 904 448)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "VALOR[3..0]" (rect 90 0 152 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
 )
 (symbol
 	(rect 504 216 568 296)
@@ -278,6 +326,21 @@ applicable agreement for further details.
 		(line (pt 8 8)(pt 24 8))
 	)
 )
+(symbol
+	(rect 128 384 160 400)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst2" (rect 3 5 26 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 184 192)
 	(pt 184 240)
@@ -351,21 +414,6 @@ applicable agreement for further details.
 	(pt 264 160)
 )
 (connector
-	(text "VALOR[0]" (rect 264 144 313 156)(font "Arial" ))
-	(pt 264 160)
-	(pt 272 160)
-)
-(connector
-	(text "VALOR[1]" (rect 368 144 417 156)(font "Arial" ))
-	(pt 368 160)
-	(pt 376 160)
-)
-(connector
-	(text "VALOR[2]" (rect 472 144 521 156)(font "Arial" ))
-	(pt 472 160)
-	(pt 480 160)
-)
-(connector
 	(pt 144 112)
 	(pt 144 128)
 )
@@ -398,11 +446,6 @@ applicable agreement for further details.
 	(pt 400 256)
 )
 (connector
-	(text "VALOR[3]" (rect 576 136 625 148)(font "Arial" ))
-	(pt 576 152)
-	(pt 584 152)
-)
-(connector
 	(pt 496 192)
 	(pt 496 240)
 )
@@ -417,14 +460,6 @@ applicable agreement for further details.
 (connector
 	(pt 496 376)
 	(pt 496 272)
-)
-(connector
-	(pt 576 240)
-	(pt 568 240)
-)
-(connector
-	(pt 576 152)
-	(pt 576 240)
 )
 (connector
 	(pt 536 408)
@@ -455,10 +490,6 @@ applicable agreement for further details.
 	(pt 224 128)
 )
 (connector
-	(pt 168 320)
-	(pt 272 320)
-)
-(connector
 	(pt 272 320)
 	(pt 376 320)
 )
@@ -487,10 +518,6 @@ applicable agreement for further details.
 	(pt 640 128)
 )
 (connector
-	(pt 184 376)
-	(pt 288 376)
-)
-(connector
 	(pt 288 376)
 	(pt 392 376)
 )
@@ -515,24 +542,82 @@ applicable agreement for further details.
 	(pt 536 408)
 )
 (connector
-	(text "DATA[0]" (rect 168 176 209 188)(font "Arial" ))
+	(text "DATA[3]" (rect 168 176 209 188)(font "Arial" ))
 	(pt 192 240)
 	(pt 184 240)
 )
 (connector
-	(text "DATA[1]" (rect 272 176 313 188)(font "Arial" ))
+	(text "DATA[2]" (rect 272 176 313 188)(font "Arial" ))
 	(pt 296 240)
 	(pt 288 240)
 )
 (connector
-	(text "DATA[2]" (rect 376 176 417 188)(font "Arial" ))
+	(text "DATA[1]" (rect 376 176 417 188)(font "Arial" ))
 	(pt 400 240)
 	(pt 392 240)
 )
 (connector
-	(text "DATA[3]" (rect 480 176 521 188)(font "Arial" ))
+	(text "DATA[0]" (rect 480 176 521 188)(font "Arial" ))
 	(pt 496 240)
 	(pt 504 240)
+)
+(connector
+	(pt 144 408)
+	(pt 144 400)
+)
+(connector
+	(text "VALOR[3]" (rect 264 144 313 156)(font "Arial" ))
+	(pt 264 160)
+	(pt 272 160)
+)
+(connector
+	(text "VALOR[2]" (rect 368 144 417 156)(font "Arial" ))
+	(pt 368 160)
+	(pt 376 160)
+)
+(connector
+	(text "VALOR[1]" (rect 472 144 521 156)(font "Arial" ))
+	(pt 472 160)
+	(pt 480 160)
+)
+(connector
+	(pt 568 240)
+	(pt 576 240)
+)
+(connector
+	(text "VALOR[0]" (rect 576 136 625 148)(font "Arial" ))
+	(pt 584 152)
+	(pt 576 152)
+)
+(connector
+	(pt 576 152)
+	(pt 576 240)
+)
+(connector
+	(pt 96 376)
+	(pt 184 376)
+)
+(connector
+	(pt 184 376)
+	(pt 288 376)
+)
+(connector
+	(pt 96 320)
+	(pt 168 320)
+)
+(connector
+	(pt 168 320)
+	(pt 272 320)
+)
+(connector
+	(pt 96 184)
+	(pt 112 184)
+	(bus)
+)
+(connector
+	(pt 728 440)
+	(pt 696 440)
+	(bus)
 )
 (junction (pt 224 128))
 (junction (pt 272 320))
@@ -546,4 +631,6 @@ applicable agreement for further details.
 (junction (pt 288 376))
 (junction (pt 224 408))
 (junction (pt 328 408))
+(junction (pt 168 320))
+(junction (pt 184 376))
 (text "REGISTRO GENERAL PARA A, B Y ESTADO" (rect -128 48 124 62)(font "Arial" (font_size 8)))
