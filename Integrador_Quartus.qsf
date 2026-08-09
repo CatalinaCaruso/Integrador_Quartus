@@ -62,8 +62,6 @@ set_global_assignment -name BDF_FILE Bloques/OR.bdf
 set_global_assignment -name BDF_FILE Bloques/InversorLogico.bdf
 set_global_assignment -name BDF_FILE Bloques/DetectorCero.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/DetectorCero.vwf
-set_global_assignment -name VECTOR_WAVEFORM_FILE Bloques/AND_AB.vwf
-set_global_assignment -name BDF_FILE RegistroA.bdf
-set_global_assignment -name QIP_FILE lpm_mux0.qip
-set_global_assignment -name BDF_FILE ALU_XOR.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/ALU_XOR.vwf
+set_global_assignment -name BDF_FILE Bloques/Registro4Bits.bdf
+set_global_assignment -name BDF_FILE Bloques/Main.bdf
