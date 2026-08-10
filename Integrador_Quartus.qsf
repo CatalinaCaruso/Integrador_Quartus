@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY InversorLogico
+set_global_assignment -name TOP_LEVEL_ENTITY "Bus de Resultado"
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:42:06  JULY 23, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -59,7 +59,6 @@ set_global_assignment -name VHDL_FILE Bloques/Registro4Bits.vhd
 set_global_assignment -name BDF_FILE Bloques/MUX_AB.bdf
 set_global_assignment -name BDF_FILE Bloques/Main.bdf
 set_global_assignment -name BDF_FILE Bloques/InversorLogico.bdf
-set_global_assignment -name BDF_FILE Bloques/Integrador_Quartus.bdf
 set_global_assignment -name BDF_FILE Bloques/DetectorCero.bdf
 set_global_assignment -name BDF_FILE Bloques/DecodificadorOPCODE.bdf
 set_global_assignment -name BDF_FILE "Bloques/Bus de Resultado.bdf"
