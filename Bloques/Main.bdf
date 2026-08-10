@@ -950,3 +950,4 @@ applicable agreement for further details.
 (junction (pt 400 768))
 (junction (pt 768 352))
 (junction (pt 800 408))
+(text "NOTA: MAIN EN DESARROLLO, USAMOS TEMPORALMENTE BUS_DE_RESULTADO" (rect 40 -144 514 -130)(font "Arial" (font_size 8)))
