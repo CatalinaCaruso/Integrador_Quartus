@@ -20,8 +20,8 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.2"))
 (symbol
-	(rect 16 16 144 112)
-	(text "ALU_OR" (rect 5 0 54 14)(font "Arial" (font_size 8)))
+	(rect 16 16 176 112)
+	(text "ASR" (rect 5 0 30 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 80 25 92)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -31,20 +31,13 @@ applicable agreement for further details.
 		(line (pt 0 32)(pt 16 32)(line_width 3))
 	)
 	(port
-		(pt 0 48)
-		(input)
-		(text "B[3..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "B[3..0]" (rect 21 43 57 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48)(line_width 3))
-	)
-	(port
-		(pt 128 32)
+		(pt 160 32)
 		(output)
-		(text "S[3..0]" (rect 0 0 36 14)(font "Arial" (font_size 8)))
-		(text "S[3..0]" (rect 71 27 107 41)(font "Arial" (font_size 8)))
-		(line (pt 128 32)(pt 112 32)(line_width 3))
+		(text "A_ASR[3..0]" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "A_ASR[3..0]" (rect 69 27 139 41)(font "Arial" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
 	)
 	(drawing
-		(rectangle (rect 16 16 112 80))
+		(rectangle (rect 16 16 144 80))
 	)
 )
