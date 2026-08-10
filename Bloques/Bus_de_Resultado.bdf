@@ -556,18 +556,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 376 424)
-	(pt 376 440)
-)
-(connector
-	(pt 376 440)
-	(pt 376 456)
-)
-(connector
-	(pt 376 456)
-	(pt 376 472)
-)
-(connector
 	(text "S[0]" (rect 330 408 350 420)(font "Arial" ))
 	(pt 320 424)
 	(pt 376 424)
@@ -576,16 +564,6 @@ applicable agreement for further details.
 	(text "S[1]" (rect 330 424 350 436)(font "Arial" ))
 	(pt 320 440)
 	(pt 376 440)
-)
-(connector
-	(text "S[2]" (rect 330 440 350 452)(font "Arial" ))
-	(pt 320 456)
-	(pt 376 456)
-)
-(connector
-	(text "S3" (rect 330 456 342 468)(font "Arial" ))
-	(pt 320 472)
-	(pt 376 472)
 )
 (connector
 	(pt 472 168)
@@ -635,11 +613,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 200 184)
-	(pt 208 184)
-	(bus)
-)
-(connector
 	(pt 144 296)
 	(pt 152 296)
 	(bus)
@@ -681,28 +654,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt -240 128)
-	(pt -240 176)
-	(bus)
-)
-(connector
-	(pt -152 176)
-	(pt -144 176)
-)
-(connector
-	(pt -240 176)
-	(pt -240 192)
-	(bus)
-)
-(connector
-	(pt -152 192)
-	(pt -144 192)
-)
-(connector
-	(pt -152 224)
-	(pt -144 224)
-)
-(connector
 	(pt -240 192)
 	(pt -240 208)
 	(bus)
@@ -711,30 +662,6 @@ applicable agreement for further details.
 	(pt -240 208)
 	(pt -240 224)
 	(bus)
-)
-(connector
-	(pt -152 208)
-	(pt -144 208)
-)
-(connector
-	(text "B[0]" (rect -238 160 -218 172)(font "Arial" ))
-	(pt -240 176)
-	(pt -152 176)
-)
-(connector
-	(text "B[1]" (rect -238 176 -218 188)(font "Arial" ))
-	(pt -240 192)
-	(pt -152 192)
-)
-(connector
-	(text "B[2]" (rect -238 192 -218 204)(font "Arial" ))
-	(pt -240 208)
-	(pt -152 208)
-)
-(connector
-	(text "B[3]" (rect -238 208 -218 220)(font "Arial" ))
-	(pt -240 224)
-	(pt -152 224)
 )
 (connector
 	(pt 88 200)
@@ -925,17 +852,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 432 296)
-	(pt 440 296)
-	(bus)
-)
-(connector
-	(text "S[3..0]" (rect 330 424 363 436)(font "Arial" ))
-	(pt 376 440)
-	(pt 440 440)
-	(bus)
-)
-(connector
 	(pt 552 440)
 	(pt 488 440)
 	(bus)
@@ -1006,12 +922,72 @@ applicable agreement for further details.
 	(pt 224 536)
 	(pt 96 536)
 )
-(junction (pt 432 296))
+(connector
+	(pt 376 424)
+	(pt 376 440)
+)
+(connector
+	(pt 376 440)
+	(pt 376 456)
+)
+(connector
+	(text "S[3]" (rect 330 456 350 468)(font "Arial" ))
+	(pt 320 472)
+	(pt 392 472)
+)
+(connector
+	(text "S[2]" (rect 330 440 350 452)(font "Arial" ))
+	(pt 320 456)
+	(pt 376 456)
+)
+(connector
+	(pt 392 440)
+	(pt 392 472)
+)
+(connector
+	(pt 376 440)
+	(pt 392 440)
+	(bus)
+)
+(connector
+	(text "S[3..0]" (rect 386 424 419 436)(font "Arial" ))
+	(pt 392 440)
+	(pt 440 440)
+	(bus)
+)
+(connector
+	(pt -240 128)
+	(pt -240 176)
+	(bus)
+)
+(connector
+	(pt -240 176)
+	(pt -240 192)
+	(bus)
+)
+(connector
+	(text "B[0]" (rect -246 160 -226 172)(font "Arial" ))
+	(pt -240 176)
+	(pt -152 176)
+)
+(connector
+	(text "B[1]" (rect -238 176 -218 188)(font "Arial" ))
+	(pt -240 192)
+	(pt -152 192)
+)
+(connector
+	(text "B[2]" (rect -238 192 -218 204)(font "Arial" ))
+	(pt -240 208)
+	(pt -152 208)
+)
+(connector
+	(text "B[3]" (rect -238 208 -218 220)(font "Arial" ))
+	(pt -240 224)
+	(pt -152 224)
+)
 (junction (pt 376 440))
-(junction (pt 376 456))
 (junction (pt 552 296))
 (junction (pt 144 184))
-(junction (pt 200 184))
 (junction (pt 144 296))
 (junction (pt 160 296))
 (junction (pt 152 296))
@@ -1019,10 +995,6 @@ applicable agreement for further details.
 (junction (pt -240 176))
 (junction (pt -240 192))
 (junction (pt -240 208))
-(junction (pt -152 176))
-(junction (pt -152 192))
-(junction (pt -152 224))
-(junction (pt -152 208))
 (junction (pt 112 200))
 (junction (pt 96 208))
 (junction (pt 120 200))
@@ -1032,3 +1004,4 @@ applicable agreement for further details.
 (junction (pt 8 192))
 (junction (pt 552 48))
 (junction (pt 528 32))
+(junction (pt 392 440))
