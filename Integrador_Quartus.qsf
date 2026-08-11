@@ -18,7 +18,7 @@
 #
 # Quartus II 64-Bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-# Date created = 20:42:06  July 23, 2026
+# Date created = 23:37:05  August 10, 2026
 #
 # -------------------------------------------------------------------------- #
 #
@@ -40,35 +40,30 @@ set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
 set_global_assignment -name TOP_LEVEL_ENTITY Main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:42:06  JULY 23, 2026"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:37:05  AUGUST 10, 2026"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/Enzo/Documents/GitHub/Integrador_Quartus/simulation/qsim/" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_global_assignment -name BDF_FILE Bloques/Bus_de_Resultado.bdf
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name BDF_FILE Bloques/TRI4Bits.bdf
 set_global_assignment -name SOURCE_FILE lpm_mux0.cmp
 set_global_assignment -name QIP_FILE lpm_mux0.qip
 set_global_assignment -name VHDL_FILE lpm_mux0.vhd
 set_global_assignment -name BDF_FILE Bloques/xor3.bdf
 set_global_assignment -name BDF_FILE Bloques/Sumador4Bits.bdf
-set_global_assignment -name BDF_FILE Bloques/Sumador.bdf
-set_global_assignment -name BDF_FILE Bloques/Resta.bdf
 set_global_assignment -name BDF_FILE Bloques/RegistroA.bdf
-set_global_assignment -name VHDL_FILE Bloques/Registro4Bits.vhd
+set_global_assignment -name BDF_FILE Bloques/Registro4Bits.bdf
 set_global_assignment -name BDF_FILE Bloques/MUX_AB.bdf
 set_global_assignment -name BDF_FILE Bloques/Main.bdf
 set_global_assignment -name BDF_FILE Bloques/InversorLogico.bdf
 set_global_assignment -name BDF_FILE Bloques/DetectorCero.bdf
 set_global_assignment -name BDF_FILE Bloques/DecodificadorOPCODE.bdf
+set_global_assignment -name BDF_FILE Bloques/Bus_de_Resultado.bdf
+set_global_assignment -name BDF_FILE Bloques/ASR.bdf
 set_global_assignment -name BDF_FILE Bloques/ALU_XOR.bdf
 set_global_assignment -name BDF_FILE Bloques/ALU_OR.bdf
 set_global_assignment -name BDF_FILE Bloques/ALU_AND.bdf
-set_global_assignment -name BDF_FILE ASR.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/ASR.vwf
-set_global_assignment -name BDF_FILE simulaciones/TRI4Bits.bdf
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
